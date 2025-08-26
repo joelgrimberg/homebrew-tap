@@ -1,7 +1,7 @@
 class ProjectorCli < Formula
   desc "A CLI application for project and action management"
   homepage "https://github.com/joelgrimberg/projector"
-  version "0.2.7"
+  version "0.2.9"
   license "MIT"
   
   on_macos do
@@ -19,8 +19,8 @@ class ProjectorCli < Formula
       url "https://github.com/joelgrimberg/projector/releases/download/v#{version}/projector_linux_arm64.tar.gz"
       sha256 "$(shasum -a 256 dist/projector_linux_arm64.tar.gz | cut -d' ' -f1)"
     else
-      url "https://github.com/joelgrimberg/projector/releases/download/v#{version}/projector_linux_arm64.tar.gz"
-      sha256 "$(shasum -a 256 dist/projector_linux_arm64.tar.gz | cut -d' ' -f1)"
+      url "https://github.com/joelgrimberg/projector/releases/download/v#{version}/projector_linux_amd64.tar.gz"
+      sha256 "$(shasum -a 256 dist/projector_linux_amd64.tar.gz | cut -d' ' -f1)"
     end
   end
   
