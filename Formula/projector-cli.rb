@@ -1,7 +1,7 @@
 class ProjectorCli < Formula
   desc "A CLI application for project and action management"
   homepage "https://github.com/joelgrimberg/projector"
-  version "0.2.9"
+  version "0.3.3"
   license "MIT"
   
   on_macos do
