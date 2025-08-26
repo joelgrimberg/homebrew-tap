@@ -1,5 +1,5 @@
 cask "projector" do
-  version "0.2.2"
+  version "0.2.3"
   sha256 "$(shasum -a 256 dist/projector_darwin_amd64.tar.gz | cut -d' ' -f1)"
   
   url "https://github.com/joelgrimberg/projector/releases/download/v#{version}/projector_darwin_amd64.tar.gz"
