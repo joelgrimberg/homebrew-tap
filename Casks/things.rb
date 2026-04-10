@@ -5,22 +5,22 @@ cask "things" do
   on_macos do
     on_intel do
       url "https://gitlab.com/joelgrimberg/things/-/releases/v#{version}/downloads/things_#{version}_darwin_amd64.tar.gz"
-      sha256 "8372bcb6957e69f79d5973e80c8d83d39a0833cb41b714bd9cc1e5d54902c484"
+      sha256 "b90fce28941a641db297f16b70222e84c0d8404355352f73a93c3732244f8d8b"
     end
     on_arm do
       url "https://gitlab.com/joelgrimberg/things/-/releases/v#{version}/downloads/things_#{version}_darwin_arm64.tar.gz"
-      sha256 "06db13573435b69c15622bf115c1ea5f419917cebc9f2dd2d6af591ce458ad5b"
+      sha256 "2d7096f5411e1fce7fb95610d08a8ace363e83a903c499625c1afafd7ed73e4a"
     end
   end
 
   on_linux do
     on_intel do
       url "https://gitlab.com/joelgrimberg/things/-/releases/v#{version}/downloads/things_#{version}_linux_amd64.tar.gz"
-      sha256 "a5ac6f0d0f02b040604f79592821f340f37aa38ba185477d15cc1825cb3ccccc"
+      sha256 "827f39af4fead0d222bb43d74d03379cd4f615ef1b1a252b1d04eca9372a6104"
     end
     on_arm do
       url "https://gitlab.com/joelgrimberg/things/-/releases/v#{version}/downloads/things_#{version}_linux_arm64.tar.gz"
-      sha256 "a1f1378296d982cf3f8742c4a2076461adfbab31ea090c1af8a4a3b970458ea7"
+      sha256 "a5492106158ef1d897337ccde9e57e0032b6c85941c10ff9145af948314d8301"
     end
   end
 
