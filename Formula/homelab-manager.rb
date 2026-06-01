@@ -5,13 +5,13 @@
 class HomelabManager < Formula
   desc "Web UI and CLI to wake/sleep a Proxmox homelab"
   homepage "https://github.com/joelgrimberg/homelab-manager"
-  version "0.5.1"
+  version "0.5.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/joelgrimberg/homelab-manager/releases/download/v0.5.1/homelab-manager_0.5.1_darwin_amd64.tar.gz"
-      sha256 "69860035bc60e05c59b512552403836ec52f27b309b76e8df8d62a76bb32ad3f"
+      url "https://github.com/joelgrimberg/homelab-manager/releases/download/v0.5.2/homelab-manager_0.5.2_darwin_amd64.tar.gz"
+      sha256 "9e8d59eed51dd339548fbcdfdd199dbe63ea55a39d64443b05663c98f34d2cca"
 
       define_method(:install) do
         bin.install "homelab-manager"
@@ -21,8 +21,8 @@ class HomelabManager < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/joelgrimberg/homelab-manager/releases/download/v0.5.1/homelab-manager_0.5.1_darwin_arm64.tar.gz"
-      sha256 "0bce444507b18a985163380b4c4132d9ea0b3dba7fdf1b9ecdfd78b5e20cbbd3"
+      url "https://github.com/joelgrimberg/homelab-manager/releases/download/v0.5.2/homelab-manager_0.5.2_darwin_arm64.tar.gz"
+      sha256 "410f851ff6f7f51b4048f633adeac045e0b4c98e1734805674a7870919ae631e"
 
       define_method(:install) do
         bin.install "homelab-manager"
@@ -35,8 +35,8 @@ class HomelabManager < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/joelgrimberg/homelab-manager/releases/download/v0.5.1/homelab-manager_0.5.1_linux_amd64.tar.gz"
-      sha256 "b8e5e55b51a7e354120ac3578f2cc5873a8c8e3677d9bc5b0af71a7fee01040b"
+      url "https://github.com/joelgrimberg/homelab-manager/releases/download/v0.5.2/homelab-manager_0.5.2_linux_amd64.tar.gz"
+      sha256 "f0992a9c2bbeda33c9a62896822f07c1fca8f3ddbb5f3ebe7cdf8960aec6308c"
       define_method(:install) do
         bin.install "homelab-manager"
         (share/"fish/vendor_functions.d").install "clients/fish/homelab.fish"
